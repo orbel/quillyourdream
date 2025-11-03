@@ -364,8 +364,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      const artwork = new Artwork(validation.data);
-      await artwork.save();
+      const artwork = await Artwork.create(validation.data);
       console.log("[CREATE ARTWORK] Success:", JSON.stringify(normalizeId(artwork)));
       res.status(201).json(normalizeId(artwork));
     } catch (error) {
@@ -491,12 +490,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       let artist = await ArtistInfo.findOne();
       
       if (!artist) {
-        artist = new ArtistInfo(req.body);
+        artist = await ArtistInfo.create(req.body);
       } else {
         Object.assign(artist, req.body);
+        await artist.save();
       }
       
-      await artist.save();
       res.json(normalizeId(artist));
     } catch (error) {
       console.error("Error updating artist info:", error);
@@ -507,8 +506,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Create FAQ
   app.post("/api/admin/faqs", isAdmin, async (req, res) => {
     try {
-      const faq = new FAQ(req.body);
-      await faq.save();
+      const faq = await FAQ.create(req.body);
       res.status(201).json(normalizeId(faq));
     } catch (error) {
       console.error("Error creating FAQ:", error);
@@ -618,8 +616,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       let settings = await SiteSettings.findOne();
       
       if (!settings) {
-        settings = new SiteSettings();
-        await settings.save();
+        settings = await SiteSettings.create({});
       }
       
       res.json(settings);
@@ -635,12 +632,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       let settings = await SiteSettings.findOne();
       
       if (!settings) {
-        settings = new SiteSettings(req.body);
+        settings = await SiteSettings.create(req.body);
       } else {
         Object.assign(settings, req.body);
+        await settings.save();
       }
       
-      await settings.save();
       res.json(settings);
     } catch (error) {
       console.error("Error updating settings:", error);
