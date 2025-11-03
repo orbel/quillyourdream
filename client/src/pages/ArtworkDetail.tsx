@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useRoute, Link } from "wouter";
 import { ArrowLeft, Ruler, Calendar, Palette, Sparkles } from "lucide-react";
@@ -13,6 +14,7 @@ import type { Artwork } from "@shared/schema";
 export default function ArtworkDetail() {
   const [, params] = useRoute("/artwork/:slug");
   const slug = params?.slug;
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const { data: artwork, isLoading } = useQuery<Artwork>({
     queryKey: ["/api/artworks", slug],
@@ -63,6 +65,7 @@ export default function ArtworkDetail() {
   }
 
   const primaryImage = artwork.images.find((img) => img.isPrimary) || artwork.images[0];
+  const selectedImage = artwork.images[selectedImageIndex] || primaryImage;
 
   const artworkSchema = generateVisualArtworkSchema(artwork);
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -94,8 +97,8 @@ export default function ArtworkDetail() {
           <div className="space-y-4">
             <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted shadow-xl">
               <OptimizedImage
-                src={primaryImage.url}
-                alt={primaryImage.alt}
+                src={selectedImage.url}
+                alt={selectedImage.alt}
                 size="feature"
                 eager={true}
                 className="w-full h-full object-cover"
@@ -103,16 +106,25 @@ export default function ArtworkDetail() {
               />
             </div>
             {artwork.images.length > 1 && (
-              <div className="grid grid-cols-3 gap-4">
-                {artwork.images.slice(1, 4).map((image, idx) => (
-                  <div key={idx} className="aspect-square rounded-lg overflow-hidden bg-muted cursor-pointer hover-elevate transition-all">
+              <div className="grid grid-cols-4 gap-3">
+                {artwork.images.map((image, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImageIndex(idx)}
+                    className={`aspect-square rounded-lg overflow-hidden bg-muted transition-all ${
+                      selectedImageIndex === idx
+                        ? 'ring-2 ring-primary ring-offset-2'
+                        : 'hover:ring-2 hover:ring-primary/50 hover:ring-offset-2 opacity-80 hover:opacity-100'
+                    }`}
+                    data-testid={`button-select-image-${idx}`}
+                  >
                     <OptimizedImage
                       src={image.url}
                       alt={image.alt}
                       size="thumbnail"
                       className="w-full h-full object-cover"
                     />
-                  </div>
+                  </button>
                 ))}
               </div>
             )}
