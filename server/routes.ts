@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { z } from "zod";
-import { contactFormSchema, insertUserSchema, updatePasswordSchema } from "@shared/schema";
+import { contactFormSchema, insertUserSchema, updatePasswordSchema, insertArtworkSchema } from "@shared/schema";
 import { connectDB, Artwork, ArtistInfo, FAQ, SiteSettings, User, isUsingNeDB } from "./db";
 import { setupAuth, isAuthenticated, isAdmin, hashPassword, verifyPassword } from "./auth";
 import { triggerRebuild, getRebuildStatus } from "./rebuild";
@@ -351,11 +351,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Admin routes - Create artwork
   app.post("/api/admin/artworks", isAdmin, async (req, res) => {
     try {
-      const artwork = new Artwork(req.body);
+      console.log("[CREATE ARTWORK] Request body:", JSON.stringify(req.body));
+      
+      // Validate request body with Zod
+      const validation = insertArtworkSchema.safeParse(req.body);
+      if (!validation.success) {
+        console.error("[CREATE ARTWORK] Validation error:", validation.error.errors);
+        return res.status(400).json({ 
+          error: "Validation error", 
+          details: validation.error.errors,
+          message: validation.error.errors[0]?.message || "Invalid artwork data"
+        });
+      }
+
+      const artwork = new Artwork(validation.data);
       await artwork.save();
+      console.log("[CREATE ARTWORK] Success:", JSON.stringify(normalizeId(artwork)));
       res.status(201).json(normalizeId(artwork));
     } catch (error) {
-      console.error("Error creating artwork:", error);
+      console.error("[CREATE ARTWORK] Error creating artwork:", error);
       res.status(500).json({ error: "Failed to create artwork" });
     }
   });
