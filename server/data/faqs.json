@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "How long does it take to create a custom commission?",
+    "answer": "The timeline for a custom commission varies depending on the complexity and size of the piece. Generally, smaller pieces (12x16 inches) take 4-6 weeks, while larger, more intricate artworks can take 8-12 weeks. Rush orders may be available for an additional fee. Once we finalize the design, I'll provide you with a specific timeline.",
+    "category": "commissions"
+  },
+  {
+    "id": 2,
+    "question": "What is the commission process?",
+    "answer": "The commission process begins with an initial consultation where we discuss your vision, preferred colors, size, and any specific elements you'd like included. I'll then create a design proposal and provide a quote. Once approved, a 50% deposit secures your spot in my schedule. I'll provide progress updates throughout the creation process, and final payment is due upon completion before shipping.",
+    "category": "commissions"
+  },
+  {
+    "id": 3,
+    "question": "How much does a custom piece typically cost?",
+    "answer": "Pricing for custom commissions depends on several factors including size, complexity, and detail level. Smaller pieces start around $800, while larger, highly detailed works can range from $1,500 to $3,000+. After our initial consultation, I'll provide a detailed quote based on your specific requirements. Keep in mind that each piece involves 50-300+ hours of meticulous handwork.",
+    "category": "pricing"
+  },
+  {
+    "id": 4,
+    "question": "Do you offer payment plans?",
+    "answer": "Yes! I understand that art is an investment. For commissions over $1,500, I offer flexible payment plans. Typically, this involves a 50% deposit to begin work, with the remaining balance split into 2-3 installments. We can discuss a payment schedule that works for your budget during our initial consultation.",
+    "category": "pricing"
+  },
+  {
+    "id": 5,
+    "question": "How should I care for my paper quilling artwork?",
+    "answer": "Paper quilling art is delicate and should be treated with care. Display your piece away from direct sunlight to prevent fading. Avoid humid environments and areas prone to moisture. Dust gently with a soft, dry brush or use compressed air from a distance. Never use water or cleaning solutions. When framed properly with UV-protective glass, your artwork can last for generations.",
+    "category": "care"
+  },
+  {
+    "id": 6,
+    "question": "Does my artwork come framed?",
+    "answer": "Original artworks come professionally framed in a shadow box frame that protects the three-dimensional paper work. The frame includes UV-protective glass to prevent fading and preserve the vibrant colors. Custom framing options are available upon request for an additional fee. All frames are carefully selected to complement the artwork while ensuring its longevity.",
+    "category": "care"
+  },
+  {
+    "id": 7,
+    "question": "Do you ship internationally?",
+    "answer": "Yes, I ship worldwide! All artworks are carefully packaged to ensure safe arrival. Domestic shipping within the US typically takes 5-7 business days via insured courier. International shipping times vary by location (typically 10-15 business days). All pieces are fully insured during transit. Shipping costs are calculated based on destination and artwork size.",
+    "category": "shipping"
+  },
+  {
+    "id": 8,
+    "question": "How do you package artwork for shipping?",
+    "answer": "Each piece is packaged with extreme care. The framed artwork is wrapped in protective materials, placed in a custom-sized box with corner protectors, and surrounded by cushioning material. Fragile labels and handling instructions are clearly marked on the exterior. All shipments are fully insured and tracked. You'll receive tracking information once your piece ships.",
+    "category": "shipping"
+  },
+  {
+    "id": 9,
+    "question": "Can I visit your studio to see artworks in person?",
+    "answer": "Yes! I welcome studio visits by appointment. Seeing the intricate details and three-dimensional nature of paper quilling in person is truly special. Located in Los Angeles, CA, my studio is available for private viewings. Please contact me at least a week in advance to schedule an appointment. This also gives you the opportunity to discuss custom commissions in person.",
+    "category": "other"
+  },
+  {
+    "id": 10,
+    "question": "Do you teach quilling workshops or classes?",
+    "answer": "Absolutely! I'm passionate about sharing the art of paper quilling. I offer private lessons, small group workshops, and birthday party activities in the Los Angeles area. Workshops cover basic to advanced techniques and include all materials. Whether you're a complete beginner or looking to refine your skills, I can create a customized learning experience. Contact me for availability and pricing.",
+    "category": "other"
+  }
+]

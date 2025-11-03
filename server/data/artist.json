@@ -1,0 +1,31 @@
+{
+  "name": "Shushan Aleksanyan",
+  "tagline": "Paper Quilling Artist & Designer",
+  "bio": "Shushan Aleksanyan is a Los Angeles-based paper quilling artist renowned for transforming simple paper strips into extraordinary three-dimensional masterpieces. With over a decade of experience, Shushan has developed a distinctive style that blends traditional quilling techniques with contemporary artistic vision.\n\nHer work has captivated collectors and art enthusiasts worldwide, with each piece reflecting meticulous craftsmanship and boundless creativity. From vibrant florals to intricate portraits, Shushan's artworks celebrate the beauty and versatility of paper as a medium.\n\nBeyond creating stunning original pieces, Shushan is passionate about sharing her craft through workshops and custom commissions, helping others discover the joy of paper artistry. Her work has been featured in galleries, private collections, and exhibitions across the United States.",
+  "location": "Los Angeles, CA",
+  "email": "info@quillyourdream.com",
+  "phone": "",
+  "social": {
+    "instagram": "https://instagram.com/quillyourdream",
+    "etsy": "https://www.etsy.com/shop/QuillYourDream",
+    "website": "https://quillyourdream.com"
+  },
+  "profileImage": "/attached_assets/IMG_8757_1760766148353.jpeg",
+  "exhibitions": [
+    {
+      "year": "2024",
+      "title": "Contemporary Craft Exhibition",
+      "location": "Los Angeles Arts District"
+    },
+    {
+      "year": "2023",
+      "title": "Paper Art Showcase",
+      "location": "Santa Monica Gallery"
+    },
+    {
+      "year": "2022",
+      "title": "Artisan Collective Show",
+      "location": "Downtown LA Art Walk"
+    }
+  ]
+}

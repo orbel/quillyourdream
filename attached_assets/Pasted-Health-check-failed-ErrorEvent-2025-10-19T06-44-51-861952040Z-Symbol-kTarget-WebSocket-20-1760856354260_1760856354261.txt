@@ -1,0 +1,49 @@
+Health check failed: ErrorEvent {
+2025-10-19T06:44:51.861952040Z   [Symbol(kTarget)]: WebSocket {
+2025-10-19T06:44:51.861954856Z     _events: [Object: null prototype] {
+2025-10-19T06:44:51.861956885Z       error: [Function],
+2025-10-19T06:44:51.861958744Z       message: [Function],
+2025-10-19T06:44:51.861960641Z       close: [Function],
+2025-10-19T06:44:51.861962456Z       open: [Function]
+2025-10-19T06:44:51.861964264Z     },
+2025-10-19T06:44:51.861966194Z     _eventsCount: 4,
+2025-10-19T06:44:51.861982114Z     _maxListeners: undefined,
+2025-10-19T06:44:51.861984326Z     _binaryType: 'arraybuffer',
+2025-10-19T06:44:51.861986163Z     _closeCode: 1006,
+2025-10-19T06:44:51.861987965Z     _closeFrameReceived: false,
+2025-10-19T06:44:51.861989815Z     _closeFrameSent: false,
+2025-10-19T06:44:51.861991611Z     _closeMessage: <Buffer >,
+2025-10-19T06:44:51.861993844Z     _closeTimer: null,
+2025-10-19T06:44:51.861995783Z     _errorEmitted: true,
+2025-10-19T06:44:51.861997591Z     _extensions: {},
+2025-10-19T06:44:51.861999456Z     _paused: false,
+2025-10-19T06:44:51.862012338Z     _protocol: '',
+2025-10-19T06:44:51.862014444Z     _readyState: 3,
+2025-10-19T06:44:51.862016274Z     _receiver: null,
+2025-10-19T06:44:51.862018093Z     _sender: null,
+2025-10-19T06:44:51.862019885Z     _socket: null,
+2025-10-19T06:44:51.862021704Z     _bufferedAmount: 0,
+2025-10-19T06:44:51.862023612Z     _isServer: false,
+2025-10-19T06:44:51.862025412Z     _redirects: 0,
+2025-10-19T06:44:51.862027217Z     _autoPong: true,
+2025-10-19T06:44:51.862029040Z     _url: 'wss://mongodb/v2',
+2025-10-19T06:44:51.862030964Z     _req: null,
+2025-10-19T06:44:51.862032813Z     [Symbol(shapeMode)]: false,
+2025-10-19T06:44:51.862034668Z     [Symbol(kCapture)]: false
+2025-10-19T06:44:51.862036570Z   },
+2025-10-19T06:44:51.862038382Z   [Symbol(kType)]: 'error',
+2025-10-19T06:44:51.862040299Z   [Symbol(kError)]: Error: connect ECONNREFUSED 172.18.0.2:443
+2025-10-19T06:44:51.862042527Z       at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16) {
+2025-10-19T06:44:51.862044526Z     errno: -111,
+2025-10-19T06:44:51.862060193Z     code: 'ECONNREFUSED',
+2025-10-19T06:44:51.862062113Z     syscall: 'connect',
+2025-10-19T06:44:51.862063948Z     address: '172.18.0.2',
+2025-10-19T06:44:51.862066322Z     port: 443
+2025-10-19T06:44:51.862068170Z   },
+2025-10-19T06:44:51.862070025Z   [Symbol(kMessage)]: 'connect ECONNREFUSED 172.18.0.2:443'
+2025-10-19T06:44:51.862072040Z }
+2025-10-19T06:45:22.013058974Z Health check failed: ErrorEvent {
+2025-10-19T06:45:22.013215688Z   [Symbol(kTarget)]: WebSocket {
+2025-10-19T06:45:22.013220616Z     _events: [Object: null prototype] {
+2025-10-19T06:45:22.013223806Z       error: [Function],
+2025-10-19T06:45:22.013226567Z       message: [Function],

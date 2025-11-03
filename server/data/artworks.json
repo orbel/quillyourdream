@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "title": "Vibrant Blooms",
+    "slug": "vibrant-blooms",
+    "description": "An explosion of color and life, this intricate paper quilling piece celebrates the beauty of nature through meticulously rolled paper strips. Each petal and leaf is carefully crafted to create depth and dimension, bringing the artwork to life with vibrant hues and delicate textures.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 24,
+    "height": 30,
+    "depth": 1.5,
+    "price": 14400,
+    "status": "available",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.TZePruXdJPrFtUJkrDoGEkcdUjH4PYVLoBI6eDvuu1Q_1760766109188.jpeg",
+        "alt": "Vibrant Blooms - Colorful paper quilling artwork featuring intricate floral design",
+        "isPrimary": true
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Ocean Depths",
+    "slug": "ocean-depths",
+    "description": "Inspired by the mesmerizing beauty of ocean waves and marine life, this piece captures the fluid movement and depth of the sea. Using various shades of blue and teal paper, the artwork creates a sense of tranquility and wonder.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 20,
+    "height": 24,
+    "depth": 1.5,
+    "price": 12000,
+    "status": "available",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.FF7VelezkCrkP5vnsBpuaZSZlT1sRElvDRrCJRIg7JQ_1760766109188.jpeg",
+        "alt": "Ocean Depths - Blue and teal paper quilling artwork depicting ocean waves",
+        "isPrimary": true
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Golden Sunset",
+    "slug": "golden-sunset",
+    "description": "A majestic owl rendered in intricate paper quilling, featuring warm golden and amber tones that evoke the rich colors of sunset. The layered paper creates depth and texture, bringing this wise nocturnal creature to life with remarkable detail in its feathers and expressive eyes.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 18,
+    "height": 24,
+    "depth": 1.5,
+    "price": 11200,
+    "status": "available",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.jN_mRpwj193fF-pMokI4GUcnpCCBqVqtRd485uQpd4Q_1760766109188.jpeg",
+        "alt": "Golden Sunset - Paper quilling artwork depicting an owl in golden tones",
+        "isPrimary": true
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Enchanted Garden",
+    "slug": "enchanted-garden",
+    "description": "A whimsical representation of a magical garden where reality meets imagination. This piece features an array of fantastical flowers and foliage, each petal and leaf meticulously quilled to create a sense of wonder and enchantment.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 22,
+    "height": 28,
+    "depth": 1.5,
+    "price": 13200,
+    "status": "available",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.uFIW8VQ8oNcbwIzPh2BwE5Pcs_bqGFbWYCMj2HJ7Y3A_1760766109188.jpeg",
+        "alt": "Enchanted Garden - Whimsical paper quilling artwork with fantastical flowers",
+        "isPrimary": true
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Autumn Symphony",
+    "slug": "autumn-symphony",
+    "description": "Celebrating the rich colors and textures of fall, this artwork brings together warm oranges, deep reds, and golden yellows in a harmonious composition that captures the essence of autumn's beauty.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2023",
+    "width": 20,
+    "height": 24,
+    "depth": 1.5,
+    "price": 12000,
+    "status": "sold",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.PPmM_a64fAqA-fhlKscSPS297Nz3E12bYs6UMiO02p8_1760766109188.jpeg",
+        "alt": "Autumn Symphony - Paper quilling artwork featuring fall colors",
+        "isPrimary": true
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Celestial Dreams",
+    "slug": "celestial-dreams",
+    "description": "This ethereal piece draws inspiration from the night sky, featuring swirling patterns that evoke the mystery and majesty of the cosmos. Deep purples, blues, and touches of silver create a dreamlike atmosphere.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 24,
+    "height": 30,
+    "depth": 1.5,
+    "price": 14800,
+    "status": "available",
+    "category": "original",
+    "images": [
+      {
+        "url": "/attached_assets/att.s1AZeHtXrZqHdpkr4hSEVadh655CJlZdJQ7T_UUT-MM_1760766109188.jpeg",
+        "alt": "Celestial Dreams - Paper quilling artwork inspired by the night sky",
+        "isPrimary": true
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 7,
+    "title": "Spring Awakening",
+    "slug": "spring-awakening",
+    "description": "Capturing the fresh energy and renewal of spring, this piece bursts with pastel colors and delicate forms. Each element represents the awakening of nature after winter's rest.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2024",
+    "width": 18,
+    "height": 24,
+    "depth": 1.5,
+    "price": 11200,
+    "status": "available",
+    "category": "commission",
+    "images": [
+      {
+        "url": "/attached_assets/att.TZePruXdJPrFtUJkrDoGEkcdUjH4PYVLoBI6eDvuu1Q_1760766109188.jpeg",
+        "alt": "Spring Awakening - Pastel paper quilling artwork celebrating spring",
+        "isPrimary": true
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "Desert Mirage",
+    "slug": "desert-mirage",
+    "description": "Inspired by the stark beauty of desert landscapes, this piece uses warm earth tones and geometric patterns to create a sense of heat and mystery, as if viewing a shimmering mirage on the horizon.",
+    "medium": "Paper quilling on canvas",
+    "artform": "Paper Quilling",
+    "dateCreated": "2023",
+    "width": 20,
+    "height": 24,
+    "depth": 1.5,
+    "price": 12400,
+    "status": "available",
+    "category": "exhibition",
+    "images": [
+      {
+        "url": "/attached_assets/att.FF7VelezkCrkP5vnsBpuaZSZlT1sRElvDRrCJRIg7JQ_1760766109188.jpeg",
+        "alt": "Desert Mirage - Earth-toned paper quilling artwork inspired by deserts",
+        "isPrimary": true
+      }
+    ],
+    "featured": false
+  }
+]

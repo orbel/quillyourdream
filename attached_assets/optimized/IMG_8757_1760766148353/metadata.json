@@ -1,0 +1,32 @@
+{
+  "original": "/home/runner/workspace/attached_assets/IMG_8757_1760766148353.jpeg",
+  "variants": {
+    "thumbnail": {
+      "webp": "/attached_assets/optimized/IMG_8757_1760766148353/thumbnail.webp",
+      "jpeg": "/attached_assets/optimized/IMG_8757_1760766148353/thumbnail.jpg",
+      "width": 367,
+      "height": 480
+    },
+    "grid": {
+      "webp": "/attached_assets/optimized/IMG_8757_1760766148353/grid.webp",
+      "jpeg": "/attached_assets/optimized/IMG_8757_1760766148353/grid.jpg",
+      "width": 733,
+      "height": 960
+    },
+    "feature": {
+      "webp": "/attached_assets/optimized/IMG_8757_1760766148353/feature.webp",
+      "jpeg": "/attached_assets/optimized/IMG_8757_1760766148353/feature.jpg",
+      "width": 1100,
+      "height": 1440
+    },
+    "full": {
+      "webp": "/attached_assets/optimized/IMG_8757_1760766148353/full.webp",
+      "jpeg": "/attached_assets/optimized/IMG_8757_1760766148353/full.jpg",
+      "width": 1284,
+      "height": 1681
+    }
+  },
+  "dominantColor": "rgb(136, 152, 152)",
+  "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoPABQAPzmGuVOvKSWisAgB4CcJaAA+QAC4Yn+OF0CPZlkAAPxtTC6xKuyflwC81GinoGKcoqgkgEahDns76BcRXbejDtHjlQ5SoM7HqzqBw2KJNH0gvKYcmakiTkIsx6n/slAk7BqbRZCLSIAAAA==",
+  "checksum": "20f577702fce29fc05fc85cc05f8c91d"
+}
