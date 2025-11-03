@@ -294,7 +294,20 @@ function ArtworkForm({ artwork, onSubmit, isPending, onCancel }: ArtworkFormProp
   });
 
   const handleSubmit = (data: InsertArtwork) => {
-    onSubmit(data);
+    console.log("[ARTWORK FORM] Submitting data:", data);
+    console.log("[ARTWORK FORM] Form errors:", form.formState.errors);
+    
+    // Clean up NaN values in numeric fields
+    const cleanedData = {
+      ...data,
+      width: isNaN(data.width) ? 0 : data.width,
+      height: isNaN(data.height) ? 0 : data.height,
+      depth: data.depth && !isNaN(data.depth) ? data.depth : undefined,
+      price: data.price && !isNaN(data.price) ? data.price : undefined,
+    };
+    
+    console.log("[ARTWORK FORM] Cleaned data:", cleanedData);
+    onSubmit(cleanedData);
   };
 
   return (
