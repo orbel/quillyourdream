@@ -364,9 +364,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
+      // Create the artwork
       const artwork = await Artwork.create(validation.data);
-      console.log("[CREATE ARTWORK] Success:", JSON.stringify(normalizeId(artwork)));
-      res.status(201).json(normalizeId(artwork));
+      
+      // For NeDB, we need to add the numeric id field to the database
+      if (isUsingNeDB() && artwork._id && !artwork.id) {
+        const numericId = hashStringToNumber(artwork._id);
+        await Artwork.updateOne({ _id: artwork._id }, { ...artwork, id: numericId });
+        // Fetch the updated artwork
+        const updatedArtwork = await Artwork.findOne({ _id: artwork._id });
+        console.log("[CREATE ARTWORK] Success:", JSON.stringify(updatedArtwork));
+        res.status(201).json(normalizeId(updatedArtwork));
+      } else {
+        console.log("[CREATE ARTWORK] Success:", JSON.stringify(normalizeId(artwork)));
+        res.status(201).json(normalizeId(artwork));
+      }
     } catch (error) {
       console.error("[CREATE ARTWORK] Error creating artwork:", error);
       res.status(500).json({ error: "Failed to create artwork" });
